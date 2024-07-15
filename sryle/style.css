@@ -154,5 +154,6 @@ nav div:nth-child(2) {
 .chats i {
     font-size: 80px;
     color: #ffffff4a;
+    cursor: default;
 }
 
