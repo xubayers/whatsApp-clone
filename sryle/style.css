@@ -1,0 +1,158 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family:  "Poppins", sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* librarry */
+.flex {
+    display: flex;
+}
+
+i {
+    cursor: pointer;
+}
+
+.gap {
+    gap: 15px;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.item-center {
+    align-items: center;
+}
+
+/* whole section */
+section { 
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+/* nav style  */
+nav {
+    grid-column: 0 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+nav div i {
+    font-size: 20px;
+    color: rgb(215, 215, 215);
+}
+
+nav div:nth-child(1) {
+    margin-top: 10px;
+}
+
+nav div:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+
+/* user list */
+.user-list {
+    grid-column: 2 / span 7;
+    padding: 15px;
+    box-shadow: 0 10px 2px #000;
+}
+
+.user-list h1 {
+    font-weight: 300;
+}
+
+.user-list div input[type="search"] {
+    background-color: rgba(0, 0, 0, 0.474);
+    width: calc((100% - 15px));
+    border: none;
+    border-bottom: 2px solid rgb(11, 204, 72);
+    outline: none;
+    height: 30px;
+    color: rgb(238, 238, 238);
+    border-radius: 4px;
+    padding: 0 8px;
+    margin-top: 10px;
+}
+
+.list {
+    margin-top: 10px;
+}
+ 
+.list .item i {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.703);
+}
+
+.list .text {
+    width: 100%;
+}
+
+.last-chat {
+    font-size: 13px;
+    color: rgba(252, 252, 252, 0.877);
+}
+
+.list .item {
+    padding: 10px;
+    width: 100%;
+    gap: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.list .item:hover {
+    background-color: rgba(197, 197, 197, 0.14);
+}
+
+
+/* chat box */
+.chats {
+    grid-column: 9 / span 25;
+    height: 100%;
+}
+
+.chats h1 {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.chats p {
+    font-size: 12px;
+    color: #ffffff75;
+    letter-spacing: .2px;
+    text-align: center;
+}
+
+.chats i {
+    font-size: 80px;
+    color: #ffffff4a;
+}
+
