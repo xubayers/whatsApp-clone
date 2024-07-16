@@ -58,6 +58,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.474);
+    padding: 5px 10px ;
 }
 
 nav div i {
@@ -157,3 +158,44 @@ nav div:nth-child(2) {
     cursor: default;
 }
 
+@media screen and (max-width: 992px) {
+    .chats {
+        display: none;
+    }
+
+    .user-list {
+        grid-column: 2 / span 25;
+    }
+
+    nav {
+        grid-column: 0 / span 3;
+    }
+} 
+
+@media screen and (min-width: 992px) {
+    .text div p:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .text > p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .text div p:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .text > p {
+        font-size: 11px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav div i {
+        font-size: 16px;
+    }
+}
